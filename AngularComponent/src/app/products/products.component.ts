@@ -15,4 +15,14 @@ export class ProductsComponent {
     {id:6, name: 'DELL Inspiron One 27 Ryzen 7', price: '2145', color: 'White', available: 'Available', Image: '/assets/products/DELL Inspiron One 27 Ryzen 7.jpg'}
 
   ];
+
+  getTotalProducts(){
+    return this.products.length;
+  }
+  getTotalAvailable(){
+    return this.products.filter(product => product.available === 'Available').length;
+  }
+  getTotalNotAvailable(){
+    return this.products.filter(product => product.available === 'Not Available').length;
+  }
 }

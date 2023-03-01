@@ -1,6 +1,11 @@
 <!-- <div *ngFor="let item of [1, 3, 5, 17, 20]">
     <p>Number is: {{ item }}</p>
 </div> -->
+<app-filter 
+[total]="getTotalProducts()"
+[available]="getTotalAvailable()"
+[notavailable]="getTotalNotAvailable()"
+></app-filter>
 <div *ngFor="let p of products; let i = index">
     <!-- <p>{{ i }}</p> -->
     <div>
