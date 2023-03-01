@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-  searchValue: string = 'Mobile';
+  searchValue: string = '';
 
   changeSearchValue(eventData: any){
     // console.log((<HTMLInputElement>eventData.target).value);
