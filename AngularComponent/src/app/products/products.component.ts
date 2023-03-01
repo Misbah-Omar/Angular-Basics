@@ -25,4 +25,13 @@ export class ProductsComponent {
   getTotalNotAvailable(){
     return this.products.filter(product => product.available === 'Not Available').length;
   }
+
+  productCountRadioButton: string = 'All';
+
+  onFilterRadioButtonChanged(data: string){
+    this.productCountRadioButton = data;
+    // console.log(this.productCountRadioButton)
+  }
+
+
 }
